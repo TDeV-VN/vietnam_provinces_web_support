@@ -4,7 +4,9 @@
 
 A Flutter package for managing Vietnam's administrative divisions: provinces, districts, and wards.
 
-<img src="https://raw.githubusercontent.com/14h4i/vietnam_provinces/main/resources/demo.gif" width="360" />
+<p align="center">
+  <img src="https://raw.githubusercontent.com/14h4i/vietnam_provinces/main/resources/demo.gif" width="360" />
+</p>
 
 ## 📄 Data source
 
