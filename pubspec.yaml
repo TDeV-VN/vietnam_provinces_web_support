@@ -1,6 +1,6 @@
 name: vietnam_provinces
 description: A Flutter package to manage Vietnam's provinces, districts, and wards.
-version: 1.0.0
+version: 1.0.1
 homepage: https://github.com/14h4i/vietnam_provinces
 repository: https://github.com/14h4i/vietnam_provinces
 issue_tracker: https://github.com/14h4i/vietnam_provinces/issues
