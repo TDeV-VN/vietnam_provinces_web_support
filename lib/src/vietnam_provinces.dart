@@ -6,15 +6,18 @@ import 'models/ward.dart';
 import 'province_helper.dart';
 import 'utils.dart';
 
+/// A library for managing Vietnamese provinces, districts, and wards.
 class VietnamProvinces {
   static late List<Province> _provinces;
 
-  // Initialize plugin
+  /// Initializes the plugin by loading province data.
   static Future<void> initialize() async {
     _provinces = await ProvinceHelper.loadProvinces();
   }
 
-  // Get list of provinces
+  /// Gets the list of provinces.
+  ///
+  /// Optionally filters by [code] or [query].
   static List<Province> getProvinces({int? code, String? query}) {
     return _provinces.where((province) {
       final matchesCode = code == null || province.code == code;
@@ -28,7 +31,9 @@ class VietnamProvinces {
     }).toList();
   }
 
-  // Get list of districts by province code
+  /// Gets the list of districts by province code.
+  ///
+  /// Optionally filters by [query].
   static List<District> getDistricts(
       {required int provinceCode, String? query}) {
     final province = _provinces.firstWhere(
@@ -47,7 +52,9 @@ class VietnamProvinces {
     }).toList();
   }
 
-  // Get list of wards by province code and district code
+  /// Gets the list of wards by province code and district code.
+  ///
+  /// Optionally filters by [query].
   static List<Ward> getWards(
       {required int provinceCode, required int districtCode, String? query}) {
     final province = _provinces.firstWhere(
