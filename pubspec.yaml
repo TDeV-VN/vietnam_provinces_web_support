@@ -20,4 +20,4 @@ dev_dependencies:
 
 flutter:
   assets:
-    - lib/assets/provinces.json
+    - lib/assets/provinces.json.gz
